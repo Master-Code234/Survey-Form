@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="EasyPC Survey Form" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Start Intro Section -->
+      <header>
+        <h1 class="title" id="title">EasyPC Survey Form</h1>
+        <p class="description" id="description">
+          Thanks for Taking the time to help improve our platform!
+        </p>
+      </header>
+      <!-- End Intro Section -->
+
+      <!-- Start Form Section -->
+      <form id="survey-form">
+        <div class="form-input">
+          <label id="name-label" for="name">Name</label>
+          <input
+            class="name-input input-outline"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+            autocomplete="name"
+            required
+          />
+        </div>
+
+        <div class="form-input">
+          <label id="email-label" for="email">Email</label>
+          <input
+            class="email-input input-outline"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+            autocomplete="email"
+            required
+          />
+        </div>
+
+        <div class="form-input">
+          <label id="number-label" for="number">Age</label>
+          <input
+            class="age-input input-outline"
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="120"
+            placeholder="Age"
+          />
+        </div>
+
+        <div class="form-input">
+          <label for="dropdown">What is your favorite gaming platform?</label>
+          <select name="gaming-platforms" id="dropdown">
+            <option disabled selected>Please Choose an option</option>
+            <option value="PlayStation">PlayStation</option>
+            <option value="Xbox">Xbox</option>
+            <option value="PC">PC</option>
+            <option value="Mobile">Mobile</option>
+          </select>
+        </div>
+
+        <div class="form-input">
+          <p>Would you recommend EasyPC to a friend?</p>
+
+          <label for="Absolutely">
+            <input
+              type="radio"
+              id="Absolutely"
+              name="recommend"
+              value="Absolutely"
+            />
+            Absolutely
+          </label>
+
+          <label for="Maybe">
+            <input type="radio" id="Maybe" name="recommend" value="Maybe" />
+            Maybe
+          </label>
+
+          <label for="Not-Sure">
+            <input
+              type="radio"
+              id="Not-Sure"
+              name="recommend"
+              value="Not-Sure"
+            />
+            Not Sure
+          </label>
+
+          <label for="No">
+            <input type="radio" id="No" name="recommend" value="No" />
+            No
+          </label>
+        </div>
+
+        <div class="form-input">
+          <label for="money-dropdown">How much do you spend on gaming?</label>
+          <select name="money-spent" id="money-dropdown">
+            <option disabled selected>Please Choose an option</option>
+            <option value="100$">100$</option>
+            <option value="200$">200$</option>
+            <option value="300$">300$</option>
+            <option value="Over-400$">Over 400$</option>
+          </select>
+        </div>
+
+        <div class="form-input">
+          <p>
+            What would you like to see improved?
+            <span class="hint">(Check all that apply)</span>
+          </p>
+
+          <label for="pc-repair">
+            <input
+              type="checkbox"
+              name="improve"
+              value="PC Repair"
+              id="pc-repair"
+            />
+            PC Repair
+          </label>
+
+          <label for="front-end-projects">
+            <input
+              type="checkbox"
+              name="improve"
+              value="front-end-projects"
+              id="front-end-projects"
+            />
+            Front-end-Projects
+          </label>
+
+          <label for="back-end-projects">
+            <input
+              type="checkbox"
+              name="improve"
+              value="back-end-projects"
+              id="back-end-projects"
+            />
+            Back-end-Projects
+          </label>
+
+          <label for="full-stack-projects">
+            <input
+              type="checkbox"
+              name="improve"
+              value="full-stack-projects"
+              id="full-stack-projects"
+            />
+            Full-Stack-Projects
+          </label>
+
+          <label for="algorithms">
+            <input
+              type="checkbox"
+              name="improve"
+              value="algorithms"
+              id="algorithms"
+            />
+            Algorithms
+          </label>
+
+          <label for="data-structures">
+            <input
+              type="checkbox"
+              name="improve"
+              value="data-structures"
+              id="data-structures"
+            />
+            Data Structures
+          </label>
+        </div>
+
+        <div class="form-input">
+          <p>Any Questions or Comments?</p>
+          <textarea
+            class="feedback-input"
+            name="feedback"
+            cols="30"
+            rows="10"
+            placeholder="Enter feedback here..."
+          ></textarea>
+        </div>
+
+        <div class="form-input">
+          <button class="submit-btn" type="submit" id="submit">Submit</button>
+        </div>
+      </form>
+      <!-- End form Section -->
+    </div>
+  </body>
+</html>

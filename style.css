@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+/* Global styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --primary-bg-color: hsla(0, 9%, 7%, 0.9);
+  --primary-font-color: #fff;
+  --green-font-color: hsl(147, 79%, 42%);
+}
+
+/* Body styles */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-family: "Red Hat Display", sans-serif;
+  color: var(--primary-font-color);
+  font-size: 1.3rem;
+}
+
+/* Header styles */
+header {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+/* Form element styles */
+label,
+p {
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  color: var(--green-font-color);
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  margin-bottom: 0.4rem;
+}
+
+.description {
+  letter-spacing: 1px;
+}
+
+option {
+  background-color: #d1cece;
+  font-size: 1rem;
+}
+
+
+input,
+select,
+textarea {
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  border: none;
+  opacity: 90%;
+}
+
+textarea:focus,
+.input-outline:focus {
+  outline: 2px solid #16ec8b;
+}
+
+/* Container styles */
+.container {
+  background-color: var(--primary-bg-color);
+  padding: 2rem 4rem;
+  margin: 2rem auto;
+  border-radius: 0.5rem;
+}
+
+/* Submit button styles */
+.submit-btn {
+  background-color: var(--green-font-color);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #147d4d;
+}
+
+/* Form input styles */
+.form-input {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+}
+
+/* Media queries */
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 1rem;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  .container {
+    padding: 1rem 2rem;
+    margin: 3rem 2rem;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .container {
+    padding: 0.9rem;
+  }
+
+  .description {
+    font-size: 0.8rem;
+  }
+}
