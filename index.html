@@ -11,7 +11,7 @@
     <div class="container">
       <!-- Start Intro Section -->
       <header>
-        <h1 class="title" id="title">EasyPC Survey Form</h1>
+        <h1 class="title" id="title"><span class="company-name">EasyPC</span> Survey Form</h1>
         <p class="description" id="description">
           Thanks for Taking the time to help improve our platform!
         </p>
@@ -70,7 +70,7 @@
           </select>
         </div>
 
-        <div class="form-input">
+        <div class="form-input radio-input">
           <p>Would you recommend EasyPC to a friend?</p>
 
           <label for="Absolutely">
@@ -105,7 +105,7 @@
         </div>
 
         <div class="form-input">
-          <label for="money-dropdown">How much do you spend on gaming?</label>
+          <label for="money-dropdown">How much money do you spend on gaming?</label>
           <select name="money-spent" id="money-dropdown">
             <option disabled selected>Please Choose an option</option>
             <option value="100$">100$</option>
@@ -115,8 +115,8 @@
           </select>
         </div>
 
-        <div class="form-input">
-          <p>
+        <div class="form-input checkbox-input">
+          <p class="input-title">
             What would you like to see improved?
             <span class="hint">(Check all that apply)</span>
           </p>
@@ -182,15 +182,18 @@
           </label>
         </div>
 
-        <div class="form-input">
-          <p>Any Questions or Comments?</p>
-          <textarea
-            class="feedback-input"
-            name="feedback"
-            cols="30"
-            rows="10"
-            placeholder="Enter feedback here..."
-          ></textarea>
+        <div class="textarea-input">
+          <label class="feedback-label" for="feedback">
+            Any Questions or Comments?
+            <textarea
+              class="feedback-input"
+              name="feedback"
+              cols="70"
+              rows="5"
+              placeholder="Enter feedback here..."
+              id="feedback"
+            ></textarea>
+          </label>
         </div>
 
         <div class="form-input">
